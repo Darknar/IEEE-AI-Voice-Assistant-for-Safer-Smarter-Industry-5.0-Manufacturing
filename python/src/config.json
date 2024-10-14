@@ -1,0 +1,117 @@
+{
+    "CHATGPT": {
+        "APIKEY_CIF": "API",
+        "PROMPT": "GPT para monitoreo y gestion operativa con datos y analisis en tiempo real.",
+        "ACTIVAR_VOZ": false,
+        "ACTIVAR_RECONOCIMIENTO": false,
+        "MAX_TOKENS": 50,
+        "MODELO": "gpt-4o",
+        "PALABRA_ACTIVACION": "Activacion",
+        "ASISTENTE": "asst_tpajUoOdkatjRL8TRjiDPBIw",
+        "ALMACEN": "vs_xj50PusGziYP3k9g6I35ToSc",
+        "NUMERO ARCHIVOS": 1,
+        "HISTORICO": {
+            "URL": "datos.txt",
+            "TIPO": "TXT"
+        },
+        "ARCHIVOS": {
+            "DATOSASISTENTE": {
+                "URL": "DatosAsistente/",
+                "TIPO": "CARPETA",
+                "ARCHIVOS": {
+                    "HISTORICO": {
+                        "URL": "Historico/",
+                        "TIPO": "CARPETA",
+                        "ARCHIVOS": {}
+                    },
+                    "MANUALES": {
+                        "URL": "Manuales/",
+                        "TIPO": "CARPETA",
+                        "ARCHIVOS": {
+                            "EJEMPLO": {
+                                "URL": "ejemplo.txt",
+                                "TIPO": "TXT"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "CARPETASDATOS": [
+            "DATOSASISTENTE"
+        ],
+        "ARCHIVOCOMUN": "datos.txt",
+        "TIPOS": [
+            ".c",
+            ".cs",
+            ".cpp",
+            ".doc",
+            ".docx",
+            ".html",
+            ".java",
+            ".json",
+            ".md",
+            ".pdf",
+            ".php",
+            ".pptx",
+            ".py",
+            ".py",
+            ".rb",
+            ".tex",
+            ".txt",
+            ".css",
+            ".js",
+            ".sh",
+            ".ts"
+        ]
+    },
+    "LOCAL": {
+        "ESTADO": true,
+        "IP_PLC": "---.---.---.---",
+        "PORT": 4840,
+        "PROMPT": "En planta, supervision y gestion local de operaciones de hormigon e inventario en tiempo real.",
+        "VARIABLES": {
+            "85": {
+                "3": {
+                    "DBRecursos": {
+                        "Humedad": {
+                            "1": "Humedad Tolva 1",
+                            "2": "Humedad Tolva 2",
+                            "3": "Humedad Tolva 3",
+                            "4": "Humedad Tolva 4",
+                            "5": "Humedad Tolva 5"
+                        },
+                        "EDig": {
+                            "1": "Abierto Mezclador",
+                            "2": "Abierto Mezclador",
+                            "3": "Inhib_Basc_Cemento",
+                            "4": "Entrada Elevador",
+                            "5": "Entrada Elevador",
+                            "6": "Cerrado Mezclador"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "GLOBAL": {
+        "ESTADO": false,
+        "BROKER": "---.---.---.---",
+        "PORT": 1883,
+        "PROMPT": "Oficina central, vision integral y gestion de activos",
+        "VARIABLES": {
+            "spBv1.0": {
+                "GrupoEMQX": {
+                    "DDATA": {
+                        "Edge": {
+                            "Interfaz del servidor_1": "Prueba 1"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "IG": {
+        "TextoInicio": "Hola, soy el asistente virtual, puedo oirte si dices PalabraReservada. En que puedo ayudarte?"
+    }
+}
