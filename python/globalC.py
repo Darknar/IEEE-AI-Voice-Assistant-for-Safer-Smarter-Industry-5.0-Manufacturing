@@ -1,6 +1,6 @@
+import json
 import paho.mqtt.client as mqtt_client
 from json_Hilos import ExtraerDatosConfig
-from mqtt_spb_wrapper import MqttSpbPayload
 from threading import Thread
 import random
 import variablesG
@@ -10,9 +10,6 @@ valores = {}
 
 DECODE_PAYLOAD = True      
 """Enable / disable payload"""
-
-_payload_parser = MqttSpbPayload()
-"""Variable para almacenar el parser de los payloads de MQTT"""
 
 #! ----------------------------------------------------------------
 #! ---------------------- Funciones internas ----------------------
@@ -49,12 +46,13 @@ def Suscribir(client, variables):
     def Mensaje(client, userdata, message):
         """Función para obtener los mensajes de MQTT"""
         
-        global _payload_parser, DECODE_PAYLOAD
+        global DECODE_PAYLOAD
         _data = "" ; nombre = "" ; datos = ""
 
         if DECODE_PAYLOAD:
             try:
-                _data = _payload_parser.parse_payload(message.payload)
+                # Parsear el payload directamente sin usar mqtt_spb_wrapper
+                _data = json.loads(message.payload.decode())
                 nombre = _data["metrics"][0]["name"]
                 datos = _data["metrics"][0]["value"]
             except:

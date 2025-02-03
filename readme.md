@@ -36,6 +36,21 @@ The system uses industrial protocols like OPC UA and MQTT with Sparkplug for int
 
 ![System Architecture](img/Programa.png)
 
+The following image represents the program's thread functionality, illustrating concurrency and parallelism in executing different tasks:
+
+![Thread Functionality](img/Hilos.png)
+
+### Description of Threads:
+
+1. **Audio Analysis Thread**: Processes and analyzes the captured audio to check for relevant commands.
+2. **Audio Detection**: Detects the wake word and sends the audio for the audio analysis thread.
+3. **Message Sampling Thread for the Graphical Interface (GUI)**: Extracts and displays real-time messages in the user interface.
+4. **Main Thread**: Manages the launch of the graphical interface and coordinates general system interactions.
+5. **System Connection and Data Generation Thread**: Continuously reads the system status through industrial protocols such as OPC UA or MQTT.
+6. **Data Generation and Shared Variable Storage Thread**: Saves the system status in a shared variable, allowing other threads to access this information.
+
+Each of these threads operates in parallel to ensure a fast and efficient response from the voice assistant in industrial environments.
+
 ## Implementation
 
 1. **Network Infrastructure**: Utilizes existing Schirmer production line network, supporting real-time communication.
@@ -74,6 +89,49 @@ User satisfaction results:
 4. Develop industry-specific language models for more accurate responses.
 5. Implement multi-language support for diverse workforce environments.
 
+## How to Load and Compile the Project from GitHub
+
+To run the project on your local machine, follow these steps:
+
+### 1. Clone the Repository
+First, download the project from GitHub using the following command:
+
+```bash
+git clone https://github.com/Darknar/IEEE-AI-Voice-Assistant-for-Safer-Smarter-Industry-5.0-Manufacturing.git
+
+cd IEEE-AI-Voice-Assistant-for-Safer-Smarter-Industry-5.0-Manufacturing
+```
+
+### 2. Install Dependencies
+Ensure you have all required dependencies installed. Run:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Add Your ChatGPT API Key
+This project requires an OpenAI API key for text generation. You need to add your API key inside the `config.json` file under the `APIKEY` field.
+
+Open `config.json` and modify the following section:
+
+```json
+{
+    "APIKEY": "your_api_key_here"
+}
+```
+
+Replace `"your_api_key_here"` with your actual OpenAI API key.
+
+### 4. Run the Program
+Start the voice assistant with:
+
+```bash
+python main.py
+```
+
+This will initialize all required threads and allow the system to function as an industrial voice assistant.
+
 ---
+
 
 For more detailed information or to contribute to this project, please contact the development team.

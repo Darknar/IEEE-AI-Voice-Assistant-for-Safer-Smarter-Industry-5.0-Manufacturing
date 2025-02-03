@@ -42,7 +42,7 @@ def unmark(text):
 
 def getAPIKey() -> str:
     """Funcion para obtener la API Key de ChatGPT"""
-    return F.decrypt(ExtraerDatosConfig()['CHATGPT']['APIKEY_CIF'].encode()).decode()
+    return ExtraerDatosConfig()['CHATGPT']['APIKEY']
 
 def ArchivosAsistente() -> list[str]:
     archivos = []

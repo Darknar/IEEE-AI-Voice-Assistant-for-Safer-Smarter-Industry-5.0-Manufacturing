@@ -1,0 +1,10 @@
+cryptography==42.0.5
+gTTS==2.5.0
+Markdown==3.5.2
+opcua==0.98.13
+openai==1.61.0
+paho_mqtt==1.6.1
+Pillow==11.1.0
+pipreqs==0.5.0
+playsound==1.2.2
+SpeechRecognition==3.8.1

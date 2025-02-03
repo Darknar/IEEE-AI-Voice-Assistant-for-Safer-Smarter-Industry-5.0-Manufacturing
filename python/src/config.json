@@ -1,14 +1,14 @@
 {
     "CHATGPT": {
-        "APIKEY_CIF": "API",
+        "APIKEY": "API",
         "PROMPT": "GPT para monitoreo y gestion operativa con datos y analisis en tiempo real.",
         "ACTIVAR_VOZ": false,
         "ACTIVAR_RECONOCIMIENTO": false,
         "MAX_TOKENS": 50,
         "MODELO": "gpt-4o",
         "PALABRA_ACTIVACION": "Activacion",
-        "ASISTENTE": "asst_tpajUoOdkatjRL8TRjiDPBIw",
-        "ALMACEN": "vs_xj50PusGziYP3k9g6I35ToSc",
+        "ASISTENTE": "",
+        "ALMACEN": "",
         "NUMERO ARCHIVOS": 1,
         "HISTORICO": {
             "URL": "datos.txt",
