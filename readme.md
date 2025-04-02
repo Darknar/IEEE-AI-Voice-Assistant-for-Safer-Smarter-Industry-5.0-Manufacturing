@@ -11,6 +11,7 @@ This project showcases the development and implementation of an advanced AI-powe
 3. [Implementation](#implementation)
 4. [Performance Results](#performance-results)
 5. [Future Improvements](#future-improvements)
+6. [How to Load and Compile the Project from GitHub](#How-to-Load-and-Compile-the-Project-from-GitHub)
 
 ## Features
 
