@@ -11,7 +11,8 @@ This project showcases the development and implementation of an advanced AI-powe
 3. [Implementation](#implementation)
 4. [Performance Results](#performance-results)
 5. [Future Improvements](#future-improvements)
-6. [How to Load and Compile the Project from GitHub](#How-to-Load-and-Compile-the-Project-from-GitHub)
+6. [How to Load and Compile the Project from GitHub](#how-to-load-and-compile-the-project-from-github)
+7. [Authors](#authors)
 
 ## Features
 
@@ -28,10 +29,18 @@ The voice assistant is built on a modular architecture:
 
 ![System Architecture](img/RelacionModulos.png)
 
-1. **Input/Output Module (EyS.py)**: Handles real-time operational data capture and storage.
-2. **Text Generation Module (ChatGPT.py)**: Manages communication with OpenAI's API.
-3. **Voice Synthesis Module (sintesis.py)**: Converts text to speech using GTTS or ChatGPT API.
-4. **Speech Recognition Module (reconocimiento.py)**: Converts audio input to text.
+The project consists of several modules and files that make up the automation system, including a robotic cell and a generative AI-based virtual assistant:
+
+- `main.py` Main controller module that integrates voice recognition, ChatGPT interaction, and speech synthesis.
+- `reconocimiento.py` Handles voice recognition using Google Speech Recognition.
+- `sintesis.py` Converts text into speech using GTTS or ChatGPT’s text-to-speech service.
+- `chatGPT.py` Manages the connection and communication with ChatGPT, processes queries, and handles file uploads.
+- `IG.py` GUI module that displays the chat dialog and manages user input.
+- `EyS.py` Handles input/output logic, enabling the selection of real-time data sources.
+- `globalC.py` Provides MQTT functionality, subscribing to topics and handling real-time communication between devices.
+- `localC.py` Implements OPC UA communication for retrieving operational data and ensuring real-time interoperability with industrial control systems.
+- `variablesG.py` Defines global variables and shared events across the system for consistent behavior.
+- `json_Hilos.py` Manages configuration and data storage using JSON files.
 
 The system uses industrial protocols like OPC UA and MQTT with Sparkplug for interoperability and security. The voice assistant is designed to be scalable and adaptable to different manufacturing environments.
 
@@ -41,7 +50,7 @@ The following image represents the program's thread functionality, illustrating 
 
 ![Thread Functionality](img/Hilos.png)
 
-### Description of Threads:
+### Description of Threads
 
 1. **Audio Analysis Thread**: Processes and analyzes the captured audio to check for relevant commands.
 2. **Audio Detection**: Detects the wake word and sends the audio for the audio analysis thread.
@@ -78,6 +87,7 @@ Performance evaluation across various conditions:
 | Tone Variation | 92.6 | 2.029 |
 
 User satisfaction results:
+
 - Satisfaction with the virtual assistant: 9.22/10
 - Correct response generation rate: 7.62/10
 - Ease of use: 7.34/10
@@ -95,6 +105,7 @@ User satisfaction results:
 To run the project on your local machine, follow these steps:
 
 ### 1. Clone the Repository
+
 First, download the project from GitHub using the following command:
 
 ```bash
@@ -104,6 +115,7 @@ cd IEEE-AI-Voice-Assistant-for-Safer-Smarter-Industry-5.0-Manufacturing
 ```
 
 ### 2. Install Dependencies
+
 Ensure you have all required dependencies installed. Run:
 
 ```bash
@@ -111,6 +123,7 @@ pip install -r requirements.txt
 ```
 
 ### 3. Add Your ChatGPT API Key
+
 This project requires an OpenAI API key for text generation. You need to add your API key inside the `config.json` file under the `APIKEY` field.
 
 Open `config.json` and modify the following section:
@@ -124,6 +137,7 @@ Open `config.json` and modify the following section:
 Replace `"your_api_key_here"` with your actual OpenAI API key.
 
 ### 4. Run the Program
+
 Start the voice assistant with:
 
 ```bash
@@ -134,5 +148,14 @@ This will initialize all required threads and allow the system to function as an
 
 ---
 
+## Authors
+
+This project was developed by:
+
+- *Francisco Antonio Lloret Abrisqueta* Industrial and Automatic Electronic Engineer from the Technical University of Cartagena (UPCT). Currently pursuing a Ph.D. in Industrial Technologies, focusing on artificial intelligence and digital twins for predictive maintenance and manufacturing optimization.
+
+- *Antonio Guerrero Gonzalez* Associate Professor of Automation and Electrical Engineering and Vice-Rector for Students and Employment at UPCT. His research focuses on Industry 4.0, including autonomous systems, collaborative robotics, and AI for industrial automation. He has led several publicly and privately funded projects.
+
+- *Roberto Zapata Martinez* Industrial and Automatic Electronic Engineer from UPCT and a current Master’s student in Industry 4.0. His interests include collaborative robotics, autonomous systems, and advanced simulation for smart manufacturing systems.
 
 For more detailed information or to contribute to this project, please contact the development team.
