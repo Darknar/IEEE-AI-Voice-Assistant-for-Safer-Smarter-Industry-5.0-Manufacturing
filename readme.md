@@ -1,4 +1,4 @@
-# AI Voice Assistant for Industry 5.0 Manufacturing Environment
+# Redefining Human-Machine Collaboration: Industry 5.0 to Improve Safety and Efficiency
 
 ## Project Overview
 
