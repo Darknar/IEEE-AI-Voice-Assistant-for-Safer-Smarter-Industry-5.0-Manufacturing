@@ -150,12 +150,16 @@ This will initialize all required threads and allow the system to function as an
 
 ## Authors
 
-This project was developed by:
+This article, titled *"Redefining Human-Machine Collaboration: Industry 5.0 to Improve Safety and Efficiency"* (ID: 9412), was developed by researchers affiliated with the *Universidad Politécnica de Cartagena (UPCT)*:
 
-- *Francisco Antonio Lloret Abrisqueta* Industrial and Automatic Electronic Engineer from the Technical University of Cartagena (UPCT). Currently pursuing a Ph.D. in Industrial Technologies, focusing on artificial intelligence and digital twins for predictive maintenance and manufacturing optimization.
+- **Francisco Antonio Lloret Abrisqueta**  
+  Industrial and Automatic Electronic Engineer from the Technical University of Cartagena (UPCT). He is currently pursuing a Ph.D. in Industrial Technologies, focusing on artificial intelligence and digital twins for predictive maintenance and manufacturing optimization.
 
-- *Antonio Guerrero Gonzalez* Associate Professor of Automation and Electrical Engineering and Vice-Rector for Students and Employment at UPCT. His research focuses on Industry 4.0, including autonomous systems, collaborative robotics, and AI for industrial automation. He has led several publicly and privately funded projects.
+- **Antonio Guerrero González**  
+  Associate Professor of Automation and Electrical Engineering and Vice-Rector for Students and Employment at UPCT. His research focuses on Industry 4.0, including autonomous systems, collaborative robotics, and AI for industrial automation. He has led several publicly and privately funded projects.
 
-- *Roberto Zapata Martinez* Industrial and Automatic Electronic Engineer from UPCT and a current Master’s student in Industry 4.0. His interests include collaborative robotics, autonomous systems, and advanced simulation for smart manufacturing systems.
+- **Roberto Zapata Martínez**  
+  Industrial and Automatic Electronic Engineer from UPCT and a current Master’s student in Industry 4.0. His interests include collaborative robotics, autonomous systems, and advanced simulation for smart manufacturing systems.
 
 For more detailed information or to contribute to this project, please contact the development team.
+
